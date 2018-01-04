@@ -7,7 +7,7 @@ public class Breakable : MonoBehaviour {
 	public float breakingVelocityMagnitude;
 
 	void OnCollisionEnter2D(Collision2D coll) {
-		print ("There was a collision!");
+		print (coll.relativeVelocity.magnitude);
 		if (coll.relativeVelocity.magnitude > breakingVelocityMagnitude) {
 			GameObject.Destroy (gameObject);
 		}
