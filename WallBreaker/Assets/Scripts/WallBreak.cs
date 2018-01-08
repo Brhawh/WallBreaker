@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class WallBreak : StateMachineBehaviour {
 
@@ -38,5 +39,6 @@ public class WallBreak : StateMachineBehaviour {
 	override public void OnStateMachineExit(Animator animator, int stateMachinePathHash) {
 		Debug.Log (GameObject.Find("Breakable"));
 		GameObject.Destroy (GameObject.Find("Breakable"));
+		SceneManager.LoadScene ("Level2");
 	}
 }
