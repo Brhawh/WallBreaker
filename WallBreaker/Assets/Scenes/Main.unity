@@ -156,7 +156,43 @@ Prefab:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 50515835246037108, guid: d41f3c7ae48fbba4bb02f8d27458a8bb,
+        type: 2}
+      propertyPath: m_Mass
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 50515835246037108, guid: d41f3c7ae48fbba4bb02f8d27458a8bb,
+        type: 2}
+      propertyPath: m_LinearDrag
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 50515835246037108, guid: d41f3c7ae48fbba4bb02f8d27458a8bb,
+        type: 2}
+      propertyPath: m_AngularDrag
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 50515835246037108, guid: d41f3c7ae48fbba4bb02f8d27458a8bb,
+        type: 2}
+      propertyPath: m_UseAutoMass
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 50515835246037108, guid: d41f3c7ae48fbba4bb02f8d27458a8bb,
+        type: 2}
+      propertyPath: m_Interpolate
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 50515835246037108, guid: d41f3c7ae48fbba4bb02f8d27458a8bb,
+        type: 2}
+      propertyPath: m_BodyType
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114554574826599828, guid: d41f3c7ae48fbba4bb02f8d27458a8bb,
+        type: 2}
+      propertyPath: moveSpeed
+      value: 10
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 61747650329976858, guid: d41f3c7ae48fbba4bb02f8d27458a8bb, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: d41f3c7ae48fbba4bb02f8d27458a8bb, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &1569764438
@@ -353,7 +389,6 @@ Camera:
   m_TargetEye: 3
   m_HDR: 1
   m_AllowMSAA: 1
-  m_AllowDynamicResolution: 0
   m_ForceIntoRT: 0
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
@@ -371,6 +406,26 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1745538859 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1146016139021432, guid: d41f3c7ae48fbba4bb02f8d27458a8bb,
+    type: 2}
+  m_PrefabInternal: {fileID: 806782938}
+--- !u!58 &1745538861
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1745538859}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.00000029802322, y: 0.01596868}
+  serializedVersion: 2
+  m_Radius: 2.961999
 --- !u!1 &1965597152
 GameObject:
   m_ObjectHideFlags: 0

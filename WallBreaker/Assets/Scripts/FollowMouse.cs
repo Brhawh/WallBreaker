@@ -14,10 +14,14 @@ public class FollowMouse : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	void FixedUpdate () {
 		mousePosition = Input.mousePosition;
 		mousePosition = Camera.main.ScreenToWorldPoint (mousePosition);
-		Vector2 direction = (mousePosition - transform.position).normalized;
-		rb.AddForce (direction * moveSpeed);
+		Vector2 direction = (mousePosition - transform.position);
+		if (direction.magnitude > 0.1f) {
+			direction.Normalize ();
+			rb.AddForce (direction * moveSpeed);
+			Debug.Log (rb.velocity.magnitude);
+		}
 	}
 }
