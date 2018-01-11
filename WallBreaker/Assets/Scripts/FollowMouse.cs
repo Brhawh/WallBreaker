@@ -15,9 +15,8 @@ public class FollowMouse : MonoBehaviour {
 	
 	// Update is called once per frame
 	void FixedUpdate () {
-		mousePosition = Input.mousePosition;
-		mousePosition = Camera.main.ScreenToWorldPoint (mousePosition);
-		Vector2 direction = (mousePosition - transform.position);
+		mousePosition = Input.acceleration;
+		Vector2 direction = new Vector2(mousePosition.x, mousePosition.y);
 		if (direction.magnitude > 0.1f) {
 			direction.Normalize ();
 			rb.AddForce (direction * moveSpeed);
