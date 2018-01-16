@@ -11,6 +11,7 @@ public class AlignWithMainCamera : MonoBehaviour {
 	void Start () {
 		float height = Camera.main.orthographicSize * 2;
 		float width = height * Screen.width / Screen.height;
+		//Debug.Log (width + " <- width || height -> " + height);
 		switch (cameraEdge) {
 		case CameraEdge.Top:
 		case CameraEdge.Bottom:

@@ -5,7 +5,7 @@ using UnityEngine;
 public class FollowMouse : MonoBehaviour {
 
 	private Vector3 mousePosition;
-	public float moveSpeed = 0.1f;
+	public float moveSpeed;
 	private Rigidbody2D rb;
 
 	// Use this for initialization
