@@ -176,8 +176,8 @@ Canvas:
   m_GameObject: {fileID: 39617842}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
+  m_RenderMode: 1
+  m_Camera: {fileID: 1654356328}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -200,7 +200,7 @@ RectTransform:
   m_Children:
   - {fileID: 1494638343}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -334,7 +334,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &806782938
 Prefab:
@@ -581,7 +581,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Button
+  m_Text: 'Menu
+
+'
 --- !u!222 &1405043136
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -620,10 +622,10 @@ RectTransform:
   m_Father: {fileID: 39617846}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 254, y: 207.5}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchorMin: {x: 0.92300004, y: 0.92951685}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0.20000076, y: -0.75001}
+  m_SizeDelta: {x: 1.5999985, y: 2.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1494638344
 MonoBehaviour:
